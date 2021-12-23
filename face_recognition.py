@@ -110,7 +110,7 @@ def find_by_euclidean(img,now_id):
         dis=np.sqrt(dis)
         if dis<distance:
             check_dis=dis
-        if dis<distance and dis<0.5:
+        if dis<distance and dis<0.42:
             found_id=vec[1]
             distance=dis
     print("distance: "+str(check_dis)+",  found_id: "+str(found_id))
